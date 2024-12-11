@@ -1,0 +1,94 @@
+{
+  "furnitures": [
+    {
+          "furnitureID": 1,
+          "furniturePrice": 199.99,
+          "furnitureQuantity": 10,
+          "furnitureName": "Modern Sofa",
+          "furnitureType": "Seating",
+          "furnitureDescription": "A comfortable modern sofa with a minimalist design.",
+          "furnitureImage": "modern-sofa.jpg"
+        },
+        {
+          "furnitureID": 2,
+          "furniturePrice": 89.99,
+          "furnitureQuantity": 20,
+          "furnitureName": "Wooden Chair",
+          "furnitureType": "Seating",
+          "furnitureDescription": "A sturdy wooden chair crafted from oak.",
+          "furnitureImage": "wooden-chair.jpg"
+        },
+        {
+          "furnitureID": 3,
+          "furniturePrice": 499.99,
+          "furnitureQuantity": 5,
+          "furnitureName": "Dining Table",
+          "furnitureType": "Table",
+          "furnitureDescription": "A large dining table suitable for family dinners.",
+          "furnitureImage": "dining-table.jpg"
+        },
+        {
+          "furnitureID": 4,
+          "furniturePrice": 159.99,
+          "furnitureQuantity": 8,
+          "furnitureName": "Bookshelf",
+          "furnitureType": "Storage",
+          "furnitureDescription": "A tall bookshelf with multiple compartments.",
+          "furnitureImage": "bookshelf.jpg"
+        },
+        {
+          "furnitureID": 5,
+          "furniturePrice": 249.99,
+          "furnitureQuantity": 4,
+          "furnitureName": "Office Desk",
+          "furnitureType": "Desk",
+          "furnitureDescription": "A spacious office desk with built-in drawers.",
+          "furnitureImage": "office-desk.jpg"
+        },
+        {
+          "furnitureID": 6,
+          "furniturePrice": 99.99,
+          "furnitureQuantity": 15,
+          "furnitureName": "Nightstand",
+          "furnitureType": "Table",
+          "furnitureDescription": "A compact nightstand with a modern design.",
+          "furnitureImage": "nightstand.jpg"
+        },
+        {
+          "furnitureID": 7,
+          "furniturePrice": 349.99,
+          "furnitureQuantity": 3,
+          "furnitureName": "Recliner Chair",
+          "furnitureType": "Seating",
+          "furnitureDescription": "A comfortable recliner chair with adjustable settings.",
+          "furnitureImage": "recliner-chair.jpg"
+        },
+        {
+          "furnitureID": 8,
+          "furniturePrice": 179.99,
+          "furnitureQuantity": 7,
+          "furnitureName": "TV Stand",
+          "furnitureType": "Storage",
+          "furnitureDescription": "A stylish TV stand with cabinet storage.",
+          "furnitureImage": "tv-stand.jpg"
+        },
+        {
+          "furnitureID": 9,
+          "furniturePrice": 129.99,
+          "furnitureQuantity": 10,
+          "furnitureName": "Coffee Table",
+          "furnitureType": "Table",
+          "furnitureDescription": "A sleek coffee table made of tempered glass.",
+          "furnitureImage": "coffee-table.jpg"
+        },
+        {
+          "furnitureID": 10,
+          "furniturePrice": 399.99,
+          "furnitureQuantity": 2,
+          "furnitureName": "Wardrobe",
+          "furnitureType": "Storage",
+          "furnitureDescription": "A spacious wardrobe with sliding doors.",
+          "furnitureImage": "wardrobe.jpg"
+        }
+  ]
+}

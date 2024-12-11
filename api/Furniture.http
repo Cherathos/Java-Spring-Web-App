@@ -1,0 +1,19 @@
+### GET Furnitures
+GET http://localhost:8080/a/all
+
+### GET ByID
+GET http://localhost:8080/a/1
+
+### CREATE Furniture
+POST http://localhost:8080/a
+Content-Type: application/json
+
+{
+  "furnitureID": 3,
+  "furnitureName": "Table",
+  "furnitureDescription": "",
+  "furnitureImage": "",
+  "furniturePrice": 20,
+  "furnitureQuantity": 10,
+  "furnitureType": "Table"
+}
