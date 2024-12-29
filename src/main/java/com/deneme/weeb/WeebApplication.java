@@ -1,7 +1,6 @@
 package com.deneme.weeb;
 
-import com.deneme.weeb.furniture.Furniture;
-import com.deneme.weeb.furniture.FurnitureRepository;
+import com.deneme.weeb.furniture.JdbcClientFurnitureRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
@@ -18,7 +17,7 @@ public class WeebApplication {
 	private static final Logger log = LoggerFactory.getLogger(WeebApplication.class);
 
 	@Bean
-	CommandLineRunner carpenter(FurnitureRepository furnitureRepository) {
+	CommandLineRunner carpenter(JdbcClientFurnitureRepository furnitureRepository) {
 		return args -> {
 		};
 	}

@@ -8,7 +8,7 @@ import java.util.Optional;
 
 
 @RestController
-@RequestMapping("/a")
+@RequestMapping("/api")
 public class FurnitureController {
 
     private final FurnitureRepository furnitureRepository;
@@ -22,8 +22,8 @@ public class FurnitureController {
         return furnitureRepository.findAll();
     }
 
-    @GetMapping("/{id}")
-    Furniture findById(@PathVariable int id){
+    @GetMapping("/find/{id}")
+    Furniture findById(@PathVariable Integer id){
         Optional<Furniture> furniture = furnitureRepository.findById(id);
         if(furniture.isEmpty()){
             throw new FurnitureNotFoundException();
@@ -32,26 +32,30 @@ public class FurnitureController {
     }
 
     @ResponseStatus(HttpStatus.CREATED)
-    @PostMapping("")
+    @PostMapping("/create")
     void createFurniture(@RequestBody Furniture furniture){
-        furnitureRepository.createFurniture(furniture);
+        furnitureRepository.save(furniture);
     }
 
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    @PutMapping("/{id}")
-    void updateFurniture(@RequestBody Furniture furniture, @PathVariable int id){
-        furnitureRepository.updateFurniture(furniture, id);
+    @PutMapping("/update/{id}")
+    void updateFurniture(@RequestBody Furniture furniture, @PathVariable Integer id){
+        furnitureRepository.save(furniture);
     }
 
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    @DeleteMapping("/{id}")
-    void deleteFurniture(@PathVariable int id){
-        furnitureRepository.deleteFurniture(id);
+    @DeleteMapping("/delete/{id}")
+    void deleteFurniture(@PathVariable Integer id){
+        furnitureRepository.delete(furnitureRepository.findById(id).get());
     }
 
-    @ResponseStatus(HttpStatus.NO_CONTENT)
-    @GetMapping("/name/{furnitureName}")
-    List<Furniture> findByName(@PathVariable String furnitureName){
-        return furnitureRepository.findByName(furnitureName);
+    @GetMapping("/type/{furnituretype}")
+    List<Furniture> findByFurnitureType(@PathVariable String furnituretype){
+        return furnitureRepository.findAllByFurnituretype(furnituretype);
+    }
+
+    @GetMapping("/name/{furniturename}")
+    List<Furniture> findByFurnitureName(@PathVariable String furniturename){
+        return furnitureRepository.findAllByFurniturename(furniturename);
     }
 }

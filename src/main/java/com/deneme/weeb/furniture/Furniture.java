@@ -2,9 +2,19 @@ package com.deneme.weeb.furniture;
 
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Positive;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Version;
 
 import java.util.Objects;
 
-public record Furniture(int furnitureID, @NotEmpty @Positive int furniturePrice, @NotEmpty @Positive int furnitureQuantity, @NotEmpty String furnitureName, String furnitureType, String furnitureDescription, String furnitureImage) {
+public record Furniture(@Id Integer id,
+                        @NotEmpty @Positive Integer price,
+                        @NotEmpty @Positive Integer quantity,
+                        @NotEmpty String furniturename,
+                        String furnituretype,
+                        String description,
+                        String image,
+                        @Version
+                        Integer version) {
 
 }

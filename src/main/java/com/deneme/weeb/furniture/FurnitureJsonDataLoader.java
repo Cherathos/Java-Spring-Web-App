@@ -14,10 +14,10 @@ import java.util.List;
 public class FurnitureJsonDataLoader implements CommandLineRunner {
 
     private static final Logger logger = LoggerFactory.getLogger(FurnitureJsonDataLoader.class);
-    private final FurnitureRepository furnitureRepository;
+    private final JdbcClientFurnitureRepository furnitureRepository;
     private final ObjectMapper objectMapper;
 
-    public FurnitureJsonDataLoader(FurnitureRepository furnitureRepository, ObjectMapper objectMapper){
+    public FurnitureJsonDataLoader(JdbcClientFurnitureRepository furnitureRepository, ObjectMapper objectMapper){
         this.furnitureRepository = furnitureRepository;
         this.objectMapper = objectMapper;
     }
